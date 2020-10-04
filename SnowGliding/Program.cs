@@ -6,7 +6,7 @@ namespace SnowGliding
     {
         static void Main(string[] args)
         {
-            string input = File.ReadAllText(@"./map.txt");
+            string input = File.ReadAllText(@"./../../../../map.txt");
             var row = input.Split('\n');
             var arrSize = row[0].Trim().Split(' ');
 
