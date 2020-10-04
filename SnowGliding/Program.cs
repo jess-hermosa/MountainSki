@@ -26,20 +26,6 @@ namespace SnowGliding
                 j++;
             }
 
-            int[,] pathMap = new int[6, 6];
-            int t = 0;
-            int p = 0;
-
-            for(var x=158;x<164;x++)
-            {
-                for(var y=392;y<398;y++)
-                {
-                    pathMap[t, p] = map[x, y];
-                    p++;
-                }
-                t++;
-                p = 0;
-            }
             (int lengthCalculatedPath, string calculatedPath) = FindLongestPath(map, rowSize, colSize);
             var path = calculatedPath.Split(',');
 
